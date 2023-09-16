@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/reservationEditText"
+        android:layout_width="386dp"
+        android:layout_height="74dp"
+        android:autofillHints=""
+        android:hint="@string/reservation_hint"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="234dp"
+        android:layout_height="145dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/placeholder_imagea" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_name"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <RadioGroup
+        android:id="@+id/attributeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/attributeOption1"
+            android:layout_width="177dp"
+            android:layout_height="52dp"
+            android:text="@string/option_1" />
+
+        <RadioButton
+            android:id="@+id/attributeOption2"
+            android:layout_width="194dp"
+            android:layout_height="63dp"
+            android:text="@string/option2" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="384dp"
+        android:layout_height="68dp"
+        android:autofillHints=""
+        android:hint="@string/price_hint"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="106dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:text="@string/save_button" />
+</LinearLayout>
